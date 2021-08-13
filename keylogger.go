@@ -36,7 +36,7 @@ var allowedDevices = devices{"keyboard", "logitech mx keys"}
 func New(devPath string) (*KeyLogger, error) {
 	k := &KeyLogger{}
 	if !k.IsRoot() {
-		return nil, errors.New("Must be run as root")
+		return nil, errors.New("must be run as root")
 	}
 	fd, err := os.OpenFile(devPath, os.O_RDWR, os.ModeCharDevice)
 	k.fd = fd
